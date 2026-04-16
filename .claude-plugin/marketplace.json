@@ -1,0 +1,14 @@
+{
+  "name": "dailynews-skill",
+  "owner": {
+    "name": "kietlecocodev",
+    "url": "https://github.com/kietlecocodev"
+  },
+  "plugins": [
+    {
+      "name": "dailynews-skill",
+      "source": "./plugins/dailynews-skill",
+      "description": "Daily tech news digest in Vietnamese — fetches from 15+ RSS feeds, deduplicates, categorizes, and outputs a ranked Vietnamese summary with Notion integration."
+    }
+  ]
+}

@@ -33,7 +33,7 @@ This is a fully self-contained skill. It uses:
 
 ```bash
 TODAY=$(date +%Y-%m-%d)
-SKILL_DIR=$(dirname "$(find ~/.claude/skills/dailynews -name 'SKILL.md' 2>/dev/null | head -1)")
+SKILL_DIR=$(dirname "$(find ~/.claude -path '*/skills/dailynews/SKILL.md' 2>/dev/null | head -1)")
 FETCH_SCRIPT="$SKILL_DIR/fetch.py"
 DIGEST_DIR="$HOME/.dailynews"
 DIGEST_FILE="$DIGEST_DIR/$TODAY.md"
